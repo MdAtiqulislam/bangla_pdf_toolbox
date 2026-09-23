@@ -1,17 +1,44 @@
-# bangla_pdf_toolbox
+# Bangla PDF Toolbox (bangla_pdf_toolbox)
 
-A new Flutter project.
+All-in-one Bangla-friendly PDF toolkit — merge, compress, convert, sign and organize PDFs on device.
+
+## Features
+
+- Merge, compress and organize PDFs
+- Image-to-PDF and PDF-to-image conversion
+- Text extraction, page numbers and metadata editing
+- Lock PDFs, digital signatures and PDF viewer
+- Settings, result screens and splash flow
+
+## Tech Stack
+
+- Flutter (Dart)
+- GetX for state management and routing
+- On-device PDF processing
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+```bash
+flutter pub get
+flutter run
+```
 
-A few resources to get you started if this is your first Flutter project:
+Build a release APK:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+```bash
+flutter build apk --release
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project Structure
+
+```
+lib/
+├── app/modules/   # Home + one module per PDF tool
+├── services/      # File/PDF services
+└── main.dart      # App entry point
+```
+
+## Notes
+
+- App label: "PDF Tool" (Android)
+- No secrets, keystores or Firebase configs are committed to this repository.
